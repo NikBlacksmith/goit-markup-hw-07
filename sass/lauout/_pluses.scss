@@ -1,0 +1,37 @@
+.pluses {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.pluses-list {
+  display: flex;
+}
+.pluses-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.pluses-item {
+  width: 270px;
+}
+.pluses-item:not(:last-child) {
+  margin-right: 30px;
+}
+.pluses-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  color: var(--main-title-color);
+  margin-bottom: 10px;
+}
+.pluses-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
