@@ -1,7 +1,9 @@
-.btn:hover,
-.btn:focus {
-  color: var(--h1-color);
-  background-color: var(--accent-color);
+.btn {
+  &:hover,
+  &:focus {
+    color: var(--h1-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .hero {

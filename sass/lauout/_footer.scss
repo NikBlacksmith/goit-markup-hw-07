@@ -48,9 +48,7 @@
   color: #ffffff;
   text-decoration: none;
 }
-.soc-marg {
-  margin-right: 10px;
-}
+
 .foot-soc-list {
   display: flex;
   justify-content: center;
@@ -62,14 +60,14 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: #2196f3;
+    fill: white;
+  }
 }
 .soc-marg:not(:last-child) {
   margin-right: 10px;
-}
-.foot-soc-list:focus,
-.foot-soc-list:hover {
-  background-color: #2196f3;
-  fill: white;
 }
 .foot-logo-icon {
   fill: #ffffff;

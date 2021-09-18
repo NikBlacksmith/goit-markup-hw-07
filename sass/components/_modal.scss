@@ -15,6 +15,7 @@
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 1;
 }
+
 .pointer {
   cursor: pointer;
   font-size: 16px;
@@ -28,6 +29,22 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
@@ -57,6 +74,8 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 10px;
+}
+.modal-form {
 }
 .modal-form-lable {
   top: 0;
@@ -94,6 +113,7 @@
 .modal-form-input:focus + .modal-logo-icon {
   fill: var(--accent-color);
 }
+
 .textarea-cont {
   display: flex;
   flex-direction: column;
@@ -118,6 +138,7 @@
 }
 .check-cont {
   display: flex;
+
   flex-direction: row;
   font-weight: 400;
   font-size: 14px;
@@ -167,4 +188,20 @@
 .checkbox:checked + .check-text > .icon-check {
   background-color: var(--accent-color);
   border: none;
+}
+.close-cont {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  margin-right: 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }

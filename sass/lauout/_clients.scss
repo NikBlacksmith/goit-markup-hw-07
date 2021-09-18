@@ -16,19 +16,21 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border: 1px solid #03a9f4;
+    & .clients-logo-icon {
+      fill: #2196f3;
+    }
+  }
+  &:focus .clients-logo-icon {
+    fill: #2196f3;
+  }
 }
-.clients-marg:not(:last-child) {
-  margin-right: 30px;
+.clients-marg {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-
-.clients-item:focus .clients-logo-icon,
-.clients-item:hover .clients-logo-icon {
-  fill: #2196f3;
-}
-.clients-item:hover {
-  border: 1px solid #03a9f4;
-}
-
 .clients-logo-icon {
   fill: #afb1b8;
   transition-property: fill;

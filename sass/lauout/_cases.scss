@@ -9,8 +9,10 @@
   padding-bottom: 90px;
 }
 
-.cases-item:not(:last-child) {
-  margin-right: 30px;
+.cases-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .case-cont {
   position: relative;
