@@ -29,8 +29,10 @@
   margin-top: 9px;
   margin-bottom: 9px;
 }
-.addres-item:not(:last-child) {
-  margin-bottom: 9px;
+.addres-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .foot-logo {
@@ -66,8 +68,10 @@
     fill: white;
   }
 }
-.soc-marg:not(:last-child) {
-  margin-right: 10px;
+.soc-marg {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .foot-logo-icon {
   fill: #ffffff;
