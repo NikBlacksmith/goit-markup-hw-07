@@ -4,10 +4,10 @@
   padding-bottom: 94px;
 }
 
-.pluses-list {
+.pluses__list {
   display: flex;
 }
-.pluses-cont {
+.pluses__item--cont {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,21 +17,23 @@
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.pluses-item {
+.pluses__item {
   width: 270px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.pluses-item .pluses-title {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.14;
-  font-weight: 700;
-  color: var(--main-title-color);
-  margin-bottom: 10px;
+.pluses__item {
+  .pluses__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    color: var(--main-title-color);
+    margin-bottom: 10px;
+  }
 }
-.pluses-text {
+.pluses__text {
   font-size: 14px;
   line-height: 1.71;
 }

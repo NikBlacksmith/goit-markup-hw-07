@@ -3,14 +3,14 @@
   padding-bottom: 60px;
   padding-top: 60px;
 }
-.footer-cont {
+.footer__cont {
   display: flex;
 }
-.soc-link-fot {
+.footer__soc-link {
   margin-left: 72px;
   padding-top: 12px;
 }
-.footer-title {
+.footer__title {
   margin-bottom: 20px;
   color: white;
   font-weight: 700;
@@ -19,23 +19,21 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.footer-list {
-  display: flex;
-}
-.contact-link {
+
+.footer__link {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
   margin-bottom: 9px;
 }
-.addres-item {
+.footer__addres-item {
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
 
-.foot-logo {
+.foot__logo {
   display: flex;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -51,42 +49,17 @@
   text-decoration: none;
 }
 
-.foot-soc-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus,
-  &:hover {
-    background-color: #2196f3;
-    fill: white;
-  }
-}
-.soc-marg {
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-}
-.foot-logo-icon {
-  fill: #ffffff;
-}
 .subscribe {
   display: flex;
   margin-left: 93px;
   padding-top: 12px;
 }
-.sub-send {
+.sub__send {
   display: flex;
   margin-top: 20px;
 }
 
-.input-sub {
+.sub__input {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -94,11 +67,11 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 20px;
 }
-.foot-btn-logo {
+.sub__btn-logo {
   fill: white;
   margin-left: 10px;
 }
-.title-mail-footer {
+.sub__title-mail {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -107,13 +80,13 @@
   color: #ffffff;
   align-items: baseline;
 }
-.placeholder-footer {
+.footer__placeholder {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.foot-button {
+.sub__button {
   display: flex;
   position: relative;
   font-size: 16px;
