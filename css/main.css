@@ -72,25 +72,8 @@ ul {
   clip: rect(0 0 0 0);
 }
 
-.header-link:focus, .header-link:hover {
-  background-color: #2196f3;
-}
-
 .header-logo-icon:hover, .header-logo-icon:focus {
   fill: #03a9f4;
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.header-list {
-  display: flex;
 }
 
 .logo-icon {
@@ -105,6 +88,23 @@ ul {
 .header-logo-icon {
   margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:focus, .header-link:hover {
+  background-color: #2196f3;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
 }
 
 .nav {
