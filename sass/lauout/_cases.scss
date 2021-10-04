@@ -7,6 +7,10 @@
 }
 .cases {
   padding-bottom: 90px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .cases__item {
