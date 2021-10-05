@@ -12,10 +12,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
   }
 }
 .footer__soc-link {
@@ -94,14 +97,19 @@
     align-items: center;
     justify-content: center;
   }
-  @media screen and (min-width: 768px) {
-    margin-left: 93px;
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    // margin-left: 93px;
     padding-top: 12px;
+    margin-top: 60px;
   }
 }
 .sub__send {
   display: flex;
   @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
     flex-direction: column;
     align-items: center;
   }
@@ -142,6 +150,9 @@
     align-items: center;
     margin-top: 20px;
   }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    margin-top: 20px;
+  }
   position: relative;
   font-size: 16px;
   padding-top: 10px;
@@ -157,4 +168,23 @@
   height: 50px;
   border-radius: 4px;
   margin-left: 12px;
+}
+.footer__conteiner-tablet {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.form__position {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 }
